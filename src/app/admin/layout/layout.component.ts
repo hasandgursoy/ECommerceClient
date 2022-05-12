@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-declare var alertify:any;
+import { AlertifyService, MessageType, Position } from 'src/app/services/admin/alertify.service';
 
 @Component({
   selector: 'app-layout',
@@ -12,7 +11,8 @@ export class LayoutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    alertify.success('Hi!');
+    
+    
   }
 
 }
